@@ -1,0 +1,16 @@
+{
+  "name": "graphpack-sample",
+  "version": "1.0.0",
+  "description": "graphql test",
+  "main": "index.js",
+  "scripts": {
+    "dev": "graphpack",
+    "build": "graphpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Junichi Kawahara",
+  "license": "ISC",
+  "devDependencies": {
+    "graphpack": "^1.0.9"
+  }
+}

@@ -1,0 +1,39 @@
+type Query {
+    users: [User!]!
+    user(id: ID!): User!
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    age: Int
+}
+
+type Mutation {
+    # 登録
+    createUser(
+        name: String!,
+        email: String!,
+        age: Int
+    ): User!
+
+    # 更新
+    updateUser(
+        id: ID!,
+        name: String!,
+        email: String,
+        age: Int
+    ): User!
+
+    # 削除
+    deleteUser(
+        id: ID!
+    ): User!
+}
+
+type Subscription {
+    userCreated: User!
+    userUpdated: User!
+    userDeleted: User!
+}
